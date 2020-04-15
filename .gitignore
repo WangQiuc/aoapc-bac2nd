@@ -1,2 +1,7 @@
 .*
 !.gitignore
+build/*
+*.txt
+*.data
+*.log
+*.exe
