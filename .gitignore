@@ -5,3 +5,5 @@ build/*
 *.data
 *.log
 *.exe
+*test*
+*lab*
