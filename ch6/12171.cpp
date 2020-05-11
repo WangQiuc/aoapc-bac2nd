@@ -21,15 +21,15 @@ const int dy[] = {0,0,-1,1,0,0};
 const int dz[] = {0,0,0,0,-1,1};
 int graph[maxn<<1][maxn<<1][maxn<<1];
 
-struct Cell
+struct Cube
 {
     int x, y, z;
-    Cell(int x, int y, int z): x(x), y(y), z(z) {}
+    Cube(int x, int y, int z): x(x), y(y), z(z) {}
     bool valid() const { return x >= 0 && x < nx-1 && y >= 0 && y < ny-1 && z >= 0 && z < nz-1; }
     bool solid() const { return graph[x][y][z] == 1; }
     bool isvis() const { return graph[x][y][z] == 2; }
     void visit() const { graph[x][y][z] = 2; }
-    Cell neighbor(int d) const { return Cell(x+dx[d], y+dy[d], z+dz[d]); }
+    Cube neighbor(int d) const { return Cube(x+dx[d], y+dy[d], z+dz[d]); }
     int volume() const { return (xs[x+1]-xs[x])*(ys[y+1]-ys[y])*(zs[z+1]-zs[z]); }
     int area(int d) const 
     { 
@@ -50,9 +50,9 @@ int ID(int *x, int n, int x0) { return lower_bound(x, x+n, x0) - x; }
 void bfs(int &s, int &v)
 {
     s = 0, v = 0;
-    Cell x(0, 0, 0);
+    Cube x(0, 0, 0);
     x.visit();
-    queue<Cell> q;
+    queue<Cube> q;
     q.push(x);
     while (!q.empty())
     {
@@ -60,7 +60,7 @@ void bfs(int &s, int &v)
         v += x.volume();
         for (int d = 0; d < 6; d++)
         {
-            Cell y = x.neighbor(d);
+            Cube y = x.neighbor(d);
             if (!y.valid()) continue;
             if (y.solid()) s += y.area(d);
             else if (!y.isvis())
