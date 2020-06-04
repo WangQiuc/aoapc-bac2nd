@@ -62,7 +62,6 @@ void init() {
     }
   }
   n = n2;
-
   // calculate overlaps
   REP(i,n) REP(j,n) REP(x,2) REP(y,2)
     overlap[i][j][x][y] = calc_overlap(s[i][x] , s[j][y]);
