@@ -5,5 +5,6 @@ build/*
 *.data
 *.log
 *.exe
+*.py
 *test*
 *lab*

@@ -10,9 +10,11 @@
 | 10491 | discrete probability             |
 | 1637  | discrete probability             |
 | 1636  | discrete probability             |
+| 11246 | exclusion                        |
 | 12330 | expectation                      |
 | 10288 | expectation                      |
 | 1639  | expectation                      |
+| 1390  | expectation                      |
 | 294   | fundamental theorem              |
 | 10791 | fundamental theorem              |
 | 10375 | fundamental theorem              |
@@ -24,6 +26,7 @@
 | 808   | geometry                         |
 | 1641  | geometry                         |
 | 1643  | geometry                         |
+| 11186 | geometry                         |
 | 10213 | geometry, euler theorem          |
 | 10886 | equation                         |
 | 12716 | equation                         |
@@ -52,5 +55,8 @@
 | 11040 | recurrence                       |
 | 12063 | recurrence                       |
 | 1648  | recurrence                       |
+| 1650  | recurrence                       |
+| 11982 | recurrence                       |
+| 12371 | recurrence                       |
 | 1646  | recurrence, bigint               |
 | 1647  | recurrence, bigint               |
