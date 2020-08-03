@@ -1,5 +1,10 @@
 | graph |                                      |
 |-------|--------------------------------------|
+| 1667  | dfs                                  |
+| 1668  | dfs                                  |
+| 1669  | dfs                                  |
+| 1670  | dfs                                  |
+| 11671 | bfs                                  |
 | 12219 | expression                           |
 | 1661  | expression, operation                |
 | 1662  | expression                           |
@@ -18,6 +23,7 @@
 | 11082 | maxflow                              |
 | 820   | maxflow                              |
 | 1658  | maxflow, mincost, breakpoint         |
+| 12433 | maxflow, mincost, breakpoint         |
 | 1660  | maxflow, breakpoint                  |
 | 1349  | maxflow, mincost, bipartite matching |
 | 1659  | maxflow, maxcost                     |
